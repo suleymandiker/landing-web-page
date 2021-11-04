@@ -58,7 +58,7 @@ html.fp-enabled,
     -moz-user-select: none; /* mozilla browsers */
     -khtml-user-select: none; /* webkit (konqueror) browsers */
     -ms-user-select: none; /* IE10+ */
-    position: hidden;
+    position: absolute;
     z-index: 4;
     top: 50%;
     cursor: pointer;
@@ -71,13 +71,13 @@ html.fp-enabled,
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 15px;
+    left: 100px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
     border-color: transparent #fff transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 15px;
+    right: 100px;
     border-width: 38.5px 0 38.5px 34px;
     border-color: transparent transparent transparent #fff;
 }
@@ -96,9 +96,9 @@ html.fp-enabled,
     transition: none !important;
 }
 #fp-nav {
-    position: fixed;
+    position: absolute;
     z-index: 100;
-    top: 50%;
+    top: 20%;
     opacity: 1;
     transform: translateY(-50%);
     -ms-transform: translateY(-50%);
